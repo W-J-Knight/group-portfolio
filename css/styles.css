@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #fff;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background: url('https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: top;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+.banner .navbar {
+    margin-top: 4%;
+
+}
+.banner .navbar-brand {
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+.banner .nav {
+    margin-right: 10%;
+
+}
+
+.banner .nav li a {
+    color: coral;
+    font-size: 1.2em;
+}
+
+.banner .info {
+    margin-top: 15%;
+    transform: translateY(15%);
+}
+
+.banner .info h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    visibility: hidden;
+    /* transform: translateX(0%); */
+}
+
+
+
+
+.banner .info p {
+    font-size: 2em;
+    font-weight: 500;
+    color: red;
+    letter-spacing: 2px;
+    visibility: hidden;
+}
+
+.banner .info a {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #e91d43;
+    padding: 10px 20px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.banner .info a:hover {
+    background: #e91e63;
+}
+
+
+/* modal */
+
+button {
+    cursor: pointer;
+}
+
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+/* MODAL */
+.modal--open .modal {
+    z-index: 60;
+    visibility: visible;
+    box-shadow: 0 20px 80px 0 rgb(0,0,0,0.55);
+}
+/* see @2:12:41 */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+.modal__half {
+    width: 50%;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 300ms ease-in;
+    /* ended transitions at 2:17:46 */
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact {
+    transform: translateX(0%);
+}
+
+.modal__about {
+    background-color: rgb(10,245,245);
+    transform: translateX(-110%);
+    /* -110 comes from the left */
+    
+}
+.modal__contact {
+    background-color: #242424;
+    color: white;
+    transform: translateX(110%);
+    /* 110% comes from the right */
+}
+.modal__languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__languages i {
+    width: 25%;
+    font-size: 50px;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal__title {
+    font-size: 12vh;
+}
+.modal__para {
+    margin-top: 10%;
+    font-size: 3vh;
+}
+.modal__sub-title {
+    font-size: 14px;
+    margin: 12px 0 24px 0;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: #fff;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #c0c4cc;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form__submit {
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+}
+
+
+
+
+/* Restaurant Portion */
+/*Portfolio*/
+/* Restaurant Portion */
+/*Portfolio*//* Restaurant Portion */
+/*Portfolio*//* Restaurant Portion */
+/*Portfolio*//* Restaurant Portion */
+/*Portfolio*//* Restaurant Portion */
+/*Portfolio*/
+.portfolio{
+    margin: 4em 0;
+       position: relative; 
+   }
+   .portfolio h1{
+    color:#F97300;
+    margin: 2em; 
+   }
+   .portfolio img{
+     height: 15rem;
+     width: 100%;
+     margin: 1em;
+     
+   }

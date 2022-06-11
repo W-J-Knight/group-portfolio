@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-md">
+                    <div class="navbar-brand">
+                        Bootstrap 4
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-8 offset-md-2 info">
+                <h1 id="bootstrapAppear" class="transition text-center changeBsColor">Bootstrap 4</h1>
+                <p id="willAppear" class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, corrupti.
+                </p>
+                <a href="#" class="mail__btn click btn btn-md text-center" onclick="toggleModal()">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <section>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">My Intro</h3>
+                <p class="modal__para">
+                    I am 26 years old. Hobbies include Jiu Jitsu, Working out, Reading & I love going to Church.
+                </p>
+                <div class="modal__languages">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Chat Me!
+                </h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">
+                    I am currently open to new opportunities!
+                </h3>
+                <form action="submit" id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Email</label>
+                        <input type="email" class="input" name="user_email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+                    <button class="form__submit" id="contact__submit">Send it My Way</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Restaurant Section -->
+    <!-- portfolio -->
+    <div class="portfolio">
+        <h1 class="text-center">Restaurants</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="https://images.pexels.com/photos/8352396/pexels-photo-8352396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
