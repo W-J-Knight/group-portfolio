@@ -221,8 +221,9 @@ label {
 /*Portfolio*//* Restaurant Portion */
 /*Portfolio*/
 .portfolio{
-    margin: 4em 0;
-       position: relative; 
+    margin: 0 0;
+    position: relative; 
+    background-color: rgb(158, 158, 158);
    }
    .portfolio h1{
     color:#F97300;
