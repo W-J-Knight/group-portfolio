@@ -4,7 +4,9 @@ body {
     background: #fff;
     color: #fff;
 }
-
+h2 {
+    font-size: 2.7rem;
+}
 .banner {
     height: 100vh;
     width: 100%;
